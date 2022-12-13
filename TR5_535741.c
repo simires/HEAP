@@ -65,7 +65,7 @@ void* HEAP_remove(HEAP* heap){ //remover; recebe a heap e remove o seu primeiro 
                     heap->elems[pos] = aux;
                     pos = f1;
                 } else break;
-            } else{ //se o pai tem soente o filho 2
+            } else{ //se o pai tem somente o filho 2
                 if(heap->elems[f2] < heap->elems[pos]){ //se o filho 2 for menor que o pai, troca os valores
                     void* aux = heap->elems[f2];
                     heap->elems[f2] = heap->elems[pos];
